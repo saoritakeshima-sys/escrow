@@ -1,5 +1,9 @@
 {
-  "rewrites": [
-    { "source": "/escrow_demo", "destination": "/escrow_demo.html" }
+  "version": 2,
+  "builds": [
+    { "src": "*.html", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/escrow_demo", "dest": "/escrow_demo.html" }
   ]
 }
